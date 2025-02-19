@@ -5,7 +5,17 @@
   "projects": {
     "client": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -97,8 +107,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "dd804ca5-5ca3-4418-a7d3-027dc2cf928c"
   }
 }
